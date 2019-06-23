@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="plotting.css">
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="leftwrapper">
+        <div id="dragwrapper">
+          <svg draggable="true" id="scatterplot"></svg>
+        </div>
+
+        <div id="selectorwrapper">
+          <div id="xDimSelector" class="dimensionselector"></div>
+          <div id="yDimSelector" class="dimensionselector"></div>
+        </div>
+      </div>
+      <div id="rightwrapper">
+        <svg id="barplot"></svg>
+      </div>
+    </div>
+
+    <script type="module" src="plotting.js"></script>
+  </body>
+</html>

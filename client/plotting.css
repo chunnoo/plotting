@@ -1,0 +1,104 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  background-color: #222;
+}
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+#leftwrapper {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#rightwrapper {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#dragwrapper {
+
+}
+
+#scatterplot {
+  width: 45vw;
+  height: 45vw;
+  border: 3px solid #444;
+}
+
+circle {
+  transition: cx 1s ease-in-out, cy 1s ease-in-out;
+}
+
+#barplot {
+  width: 45vw;
+  height: 45vw;
+  border: 3px solid #444;
+}
+
+rect {
+  transition: y 1s ease-in-out, height 1s ease-in-out;
+}
+
+#selectorwrapper {
+  height: 25vh;
+  margin-top: 0vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dimensionselector {
+  width: 45vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.dimensionselectorButton {
+  height: 5vh;
+  border: none;
+  padding: 0;
+  margin: 0;
+  flex-grow: 1;
+  background-color: #2855bf;
+  color: #fff;
+  /*border: 3px solid #3c69d3;*/
+  border: 3px solid #647de7;
+  margin-left: -2px;
+  margin-right: -2px;
+}
+
+.dimensionselectorButton:disabled {
+  background-color: #002d97;
+}
+
+.dimensionselectorButton:hover:enabled {
+  background-color: #1441ab
+}
+
+.dimensionselectorButton:last-child {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.dimensionselectorButton:first-child {
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
